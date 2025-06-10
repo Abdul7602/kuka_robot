@@ -57,6 +57,12 @@ SSH into your Pi from your workstation (replace with your credentials if needed)
 ```bash
 ssh ubuntu@172.31.1.148
 ```
+## 4.1. When prompted add the pwd
+
+Password:
+```bash
+humeaIiwa14!
+```
 
 > **Note:**  
 > - Double-check that your Ethernet cable is connected before attempting to SSH.
