@@ -4,7 +4,7 @@ This guide shows you how to build your ROS 2 workspace using two common methods.
 
 ---
 
-## 1. Build with Symlink Install (Recommended for Development)
+## Build with Symlink Install (Recommended for Development)
 
 This method uses symbolic links for installed files, making it easy to see code changes immediately without rebuilding.
 
@@ -18,12 +18,7 @@ colcon build --symlink-install
 
 ---
 
-- **When to use:** Preparing for release, deployment, or testing in a production-like environment.
-- **Benefits:** Mimics the final install layout, ensures all files are properly copied.
-
----
-
-## 3. Build a Specific Package
+## Build a Specific Package
 
 To build only a specific package (replace `your_package_name` with your actual package):
 
@@ -33,9 +28,19 @@ colcon build --packages-select your_package_name
 ```
 
 ---
+# combined_launch
 
-## Notes
+A ROS 2 package for launching multiple nodes or configurations together.
 
-- Always source your workspace after building:
+## Create the package
+
+```bash
+cd ~/ros2_ws/src
+ros2 pkg create --build-type ament_python combined_launch
+```
+
+## Source
+
+Always source your workspace after building:
   ```bash
   source install/setup.bash
