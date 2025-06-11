@@ -165,6 +165,24 @@ pose:
     z: 0.0
     w: 1.0"
 ```
+working Test Poses
+ubuntu@ubuntu:~/ros2_ws$ 
+```bash
+
+ros2 topic pub /marker_pose geometry_msgs/PoseStamped "header:
+  frame_id: 'lbr_link_0'
+pose:
+  position:
+    x: 0.0
+    y: 0.3
+    z: 1.2
+  orientation:
+    x: 0.0
+    y: 0.0
+    z: 0.707
+    w: 0.707"
+```
+
 ## Customization
 
 - **Joint and group names:**  
