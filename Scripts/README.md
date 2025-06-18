@@ -13,6 +13,9 @@ cd ~/ros2_ws
 colcon build --symlink-install
 ```
 
+```bash
+MAKEFLAGS="-j8 -l8" colcon build --mixin release --parallel-workers 4
+```
 - **When to use:** Actively developing your packages and want changes to reflect instantly.
 - **Benefits:** Faster iteration, no need to rebuild for every code change.
 
