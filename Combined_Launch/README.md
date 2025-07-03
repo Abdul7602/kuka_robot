@@ -31,3 +31,19 @@ This command launches the iiwa14 robot mock setup including RViz with the MoveIt
 ros2 launch combined_launch robot_mock_setup.launch.py
 ```
 This sets up a mock robot state publisher and RViz visualization for interacting with the iiwa14 robot.
+
+
+
+ubuntu@ubuntu:~/
+```
+ros2_ws$ ros2 run tf2_ros static_transform_publisher \
+  0 0 0  0.7071 0.0 0.7071 0.0 \
+  world lbr_link_0
+```
+
+[WARN] [1751560908.134766300] []: Old-style arguments are deprecated; see --help for new-style arguments
+[INFO] [1751560908.151590095] [static_transform_publisher_wv8UHSXXtuQEgntR]: Spinning until stopped - publishing transform
+translation: ('0.000000', '0.000000', '0.000000')
+rotation: ('0.707100', '0.000000', '0.707100', '0.000000')
+from 'world' to 'lbr_link_0'
+
