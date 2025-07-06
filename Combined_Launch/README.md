@@ -36,7 +36,7 @@ This sets up a mock robot state publisher and RViz visualization for interacting
 
 ubuntu@ubuntu:~/
 ```
-ros2_ws$ ros2 run tf2_ros static_transform_publisher \
+ros2 run tf2_ros static_transform_publisher \
   0 0 0  0.7071 0.0 0.7071 0.0 \
   world lbr_link_0
 ```
