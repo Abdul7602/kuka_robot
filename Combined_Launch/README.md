@@ -33,17 +33,32 @@ ros2 launch combined_launch robot_mock_setup.launch.py
 This sets up a mock robot state publisher and RViz visualization for interacting with the iiwa14 robot.
 
 
+# 📡 KUKA iiwa14 + Motive Motion Capture Integration (ROS 2)
 
-ubuntu@ubuntu:~/
+This setup integrates a **KUKA iiwa14 robot** URDF in ROS 2 with **OptiTrack Motive** motion capture data using a correct TF alignment between the Motive `map` frame and the ROS `world` frame.
+
+---
+
+## ✅ Why This Works
+
+Motive originally streams motion capture data in a **Y-up coordinate system**, which **does not align with ROS**, where **Z is up**.
+
+To make integration seamless:
+- We changed **Motive's coordinate system** to stream with **Z-up**.
+- This aligns all three axes directly with ROS standards.
+
+| Axis Meaning        | Motive (After Change) | ROS Convention |
+|---------------------|------------------------|----------------|
+| Forward             | +X                     | +X ✅           |
+| Left/Right          | +Y                     | +Y ✅           |
+| **Up/Down**         | **+Z**                 | **+Z ✅**       |
+
+---
+
+## 🔄 Transform Between `map` and `world`
+
+We publish a static transform to bridge `map` (from Motive) to `world` (used by URDF/TF):
+
+```bash
+ros2 run tf2_ros static_transform_publisher 0.3 -1.4 0.6 0 0 0 map world
 ```
-ros2 run tf2_ros static_transform_publisher \
-  0 0 0  0.7071 0.0 0.7071 0.0 \
-  world lbr_link_0
-```
-
-[WARN] [1751560908.134766300] []: Old-style arguments are deprecated; see --help for new-style arguments
-[INFO] [1751560908.151590095] [static_transform_publisher_wv8UHSXXtuQEgntR]: Spinning until stopped - publishing transform
-translation: ('0.000000', '0.000000', '0.000000')
-rotation: ('0.707100', '0.000000', '0.707100', '0.000000')
-from 'world' to 'lbr_link_0'
-
