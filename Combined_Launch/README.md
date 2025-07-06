@@ -62,3 +62,35 @@ We publish a static transform to bridge `map` (from Motive) to `world` (used by 
 ```bash
 ros2 run tf2_ros static_transform_publisher 0.3 -1.4 0.6 0 0 0 map world
 ```
+- 0.3 -1.4 0.6 = physical translation offset between the Motive origin and robot base
+- 0 0 0 = no rotation needed (axes are already aligned via Z-up setting in Motive)
+
+🦾 Robot Setup
+
+The iiwa14.urdf.xacro describes:
+
+- The KUKA iiwa14 robot   
+- A wall and visual adapter    
+- The robot base link (lbr_link_0) is fixed to the wall via a URDF joint
+
+📍 TF Tree After Setup
+
+map (from Motive)
+ └── world (ROS)
+     └── lbr_link_0 (robot base)
+         └── ...
+             └── visual_probe
+
+🛠️ Notes
+    
+- If you revert Motive to Y-up, you'll need to apply a rotation using but it does not work properly so stick to this z axis since rviz uses the same in ros world z axis is up:
+```
+    ros2 run tf2_ros static_transform_publisher 0 0 0 -1.5708 0 -1.5708 map world
+```
+ - The current setup assumes Z-up streaming is active in Motive (Settings → Coordinate System).
+
+🧪 Testing
+    
+- Launch RViz
+- Set Fixed Frame to world
+- Visualize TF, robot model, and Motive markers — they should align and move correctly in all 3D directions
