@@ -82,6 +82,10 @@ map (from Motive)
              └── visual_probe
 
 🛠️ Notes
+
+```
+ros2 run my_moveit_pose track_motive_pose   --ros-args   --remap /joint_states:=/lbr/joint_states   --remap /plan_kinematic_path:=/lbr/plan_kinematic_path
+```
     
 - If you revert Motive to Y-up, you'll need to apply a rotation using but it does not work properly so stick to this z axis since rviz uses the same in ros world z axis is up:
 ```
