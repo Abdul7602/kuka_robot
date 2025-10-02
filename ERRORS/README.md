@@ -27,6 +27,12 @@ The error occurs because the remote host identification has changed. This usuall
 ssh-keygen -R "172.31.1.148"
 ```
 
+Or to remove all known hosts:
+
+```bash
+sudo rm -r /home/rosuser/.ssh/known_hosts
+```
+
 ### 2. Attempt to connect again
 
 ```bash
