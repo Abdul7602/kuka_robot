@@ -66,7 +66,6 @@ Regularly check and maintain your SSH configuration and known_hosts file.
 
 If this issue happens frequently, confirm that the server's IP address or hostname has not changed unexpectedly.
 
-
-If you want, I can also create an **even cleaner “quick copy & fix” version** where everything is ultra-concise and all commands are right next to the instructions—great for a single reference page. Do you want me to do that too?
+![SSH](../images/RaspberrySSHError.png)
 
 
