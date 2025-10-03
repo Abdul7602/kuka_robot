@@ -105,6 +105,15 @@ ros2 launch lbr_bringup move_group.launch.py     mode:=mock     rviz:=true     m
 
 ---
 
+Launch the OptiTrack System
+
+This command starts nodes responsible for motion capture marker visualization using OptiTrack.
+
+```
+ros2 launch combined_launch optitrack_bringup.launch.py
+```
+This will bring up nodes related to the OptiTrack system and publish marker transforms.
+
 ## Troubleshooting
 
 - **Can't connect via SSH?**
