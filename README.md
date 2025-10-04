@@ -2,10 +2,13 @@
 
 <br>
 
-## KUKA iiwa14
+## KUKA iiwa14 with UltraSound Scanning
 
 <be>
+  
+![kuka_us](images/KukaRobot.png)
 
-![image](https://github.com/user-attachments/assets/d2259f86-6b6a-4f96-8ddf-cb4819665f2b)
+# Kuka Robot
+
 ![image](https://github.com/user-attachments/assets/d2259f86-6b6a-4f96-8ddf-cb4819665f2b)
 
