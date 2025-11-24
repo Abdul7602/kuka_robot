@@ -5,11 +5,6 @@ This repository provides resources and annotations for running the **KUKA iiwa14
 | ------------------------------------------------------------------------------------- | 
 
 
-Video
-
-https://github.com/user-attachments/assets/348b11ab-e361-4c2c-843f-c8441c5d8198
-
-
 ## Annotations for Running the Robot
 
 ### Overview
