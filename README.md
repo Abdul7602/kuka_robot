@@ -28,6 +28,7 @@ Video
 <video src="https://github.com/user-attachments/assets/5308dcfd-13c1-4153-8325-c28db014113f" controls width="400" align="center"></video>
 
 
+
 ### 2. General KUKA Robot View
 <p align="center">
   <img src="https://github.com/user-attachments/assets/d2259f86-6b6a-4f96-8ddf-cb4819665f2b" alt="KUKA Robot" style="width: 500px;"/>
