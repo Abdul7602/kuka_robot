@@ -39,5 +39,3 @@ This guide explains how to calibrate the ground plane and set the correct height
 - **Markers not detected properly**: Clean the reflective markers and ensure cameras are calibrated.
 - **Ground plane looks tilted**: Reselect the L-shape markers carefully and repeat calibration.
 - **Height mismatch**: Verify the measured offset value and reapply.
-
-Thank you, 
