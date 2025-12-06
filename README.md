@@ -22,7 +22,10 @@ The KUKA iiwa14 is an advanced robotic arm widely used in industrial and medical
 *Figure: Full setup of the KUKA robot with integrated ultrasound scanner.*
 
 ---
-<video src="https://raw.githubusercontent.com/Abdul7602/kuka_robot/main/images/output.mp4" controls width="600"></video>
+
+Video
+
+<video src="https://github.com/user-attachments/assets/5308dcfd-13c1-4153-8325-c28db014113f" controls width="400" align="center"></video>
 
 
 ### 2. General KUKA Robot View
