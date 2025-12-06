@@ -25,7 +25,8 @@ The KUKA iiwa14 is an advanced robotic arm widely used in industrial and medical
 
 Video
 
-<video src="https://github.com/user-attachments/assets/5308dcfd-13c1-4153-8325-c28db014113f" controls width="400" align="center"></video>
+
+https://github.com/user-attachments/assets/5308dcfd-13c1-4153-8325-c28db014113f
 
 
 
