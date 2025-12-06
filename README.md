@@ -2,8 +2,7 @@
 
 This repository provides resources and annotations for running the **KUKA iiwa14 robot** integrated with **ultrasound scanning** and the **OptiTrack camera system**. Below you'll find an overview of the system setup, visual references, and guidelines to utilize the repository effectively.
 
-| ------------------------------------------------------------------------------------- | 
-
+---
 
 ## Annotations for Running the Robot
 
@@ -19,20 +18,16 @@ The KUKA iiwa14 is an advanced robotic arm widely used in industrial and medical
 <p align="center">
   <img src="images/KukaRobot.png" alt="KUKA Robot with Ultrasound" style="width: 500px;"/>
 </p>
-*Figure: Full setup of the KUKA robot with integrated ultrasound scanner.*
+<em>Figure: Full setup of the KUKA robot with integrated ultrasound scanner.</em>
 
 ---
-
-Video
-
+## Video
 
 https://github.com/user-attachments/assets/5308dcfd-13c1-4153-8325-c28db014113f
 
-
-
+---
 ### 2. General KUKA Robot View
 <p align="center">
   <img src="https://github.com/user-attachments/assets/d2259f86-6b6a-4f96-8ddf-cb4819665f2b" alt="KUKA Robot" style="width: 500px;"/>
 </p>
-*Figure: An illustrative view of the KUKA robot.*
-
+<em>Figure: An illustrative view of the KUKA robot.</em>
